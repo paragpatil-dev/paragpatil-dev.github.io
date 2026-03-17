@@ -438,3 +438,11 @@ footer {
   .projects-grid { grid-template-columns: 1fr; }
   .social-icons { justify-content: flex-start; flex-wrap: wrap; }
 }
+
+.hero-text .typing {
+  font-size: 1.2rem;
+  color: #0366d6;
+  margin-top: 0.3rem;
+  min-height: 1.4rem; /* prevent layout jump */
+  font-weight: 500;
+}
