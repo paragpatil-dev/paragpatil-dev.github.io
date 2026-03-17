@@ -1,11 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Parag Patil | AI Era Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parag Patil | Digital Resume</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Hello, I am Parag 👋</h1>
-    <p>Problem Solver | Cloud-focused | AI Enthusiast</p>
+
+<body class="light">
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Parag Patil</div>
+
+    <!-- Hamburger button -->
+    <button id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="themeToggle">Toggle Theme</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Parag <span class="highlight">Vinod Patil</span></h1>
+        <p class="typing" id="typing"></p>
+        <p>Email: <a href="mailto:paragpatil1509@gmail.com">paragpatil1509@gmail.com</a> | Phone: +91 7387255158</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn">Download Resume</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=faces&fit=crop&w=200&h=200" alt="Profile Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python"><p>Python</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="PHP"><p>PHP</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"><p>HTML</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS"><p>CSS</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="jQuery"><p>jQuery</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="AJAX"><p>AJAX</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MySQL"><p>MySQL</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" alt="OOP"><p>OOP</p></div>
+      <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="Git"><p>Git</p></div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="edu-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Dr._D._Y._Patil_Arts_Commerce_Science_College_Logo.png/600px-Dr._D._Y._Patil_Arts_Commerce_Science_College_Logo.png" alt="Dr. D. Y. Patil College">
+        <div class="edu-content">
+          <a href="https://www.dypatil.edu/" target="_blank" class="edu-name">Dr. D. Y. Patil Arts, Commerce & Science College, Pimpri</a>
+          <p>Bachelor of Computer Applications (Commerce)</p>
+          <p>Aug 2022 - Jun 2025 | CGPA: 7.0/10.0</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/School_icon.png" alt="P K Commerce And Science Junior College">
+        <div class="edu-content">
+          <a href="#" target="_blank" class="edu-name">P K Commerce And Science Junior College, Chakan</a>
+          <p>12th (HSC) 2021 - 2022 | Percentage: 58.50%</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/School_icon.png" alt="Dnyanwardhini Vidyalay">
+        <div class="edu-content">
+          <a href="#" target="_blank" class="edu-name">Dnyanwardhini Vidyalay, Chakan</a>
+          <p>10th (SSC) 2019 - 2020 | Percentage: 71.40%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2948/2948036.png" alt="Real Estate Project"></a>
+        <div class="project-content">
+          <a href="#" target="_blank" class="project-name">Real Estate Management System</a>
+          <p>Admin panel for managing property types, locations, user roles, and listings.</p>
+          <p><strong>Tech Stack:</strong> PHP, MySQL, HTML, JavaScript, jQuery, AJAX</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2893/2893827.png" alt="Blood Bank Project"></a>
+        <div class="project-content">
+          <a href="#" target="_blank" class="project-name">Blood Bank Donor Management System</a>
+          <p>Search donors by city and blood group; admin panel for blood requests and donor tracking.</p>
+          <p><strong>Tech Stack:</strong> Django, MySQL, HTML, JavaScript, jQuery, AJAX</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <a href="https://paragpatil-dev.github.io/Self-Attendance-System/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Attendance App"></a>
+        <div class="project-content">
+          <a href="https://paragpatil-dev.github.io/Self-Attendance-System/" target="_blank" class="project-name">Self Attendance System</a>
+          <p>Web app to mark Present/Absent/Half/Holiday with calendar view and salary calculation.</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact-wrapper">
+      <p class="contact-intro">Feel free to reach out — I’d love to connect!</p>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:paragpatil1509@gmail.com">paragpatil1509@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917387255158">+91 7387255158</a></p>
+        <p><strong>Address:</strong> Balajinagar, Medankarwadi, Chakan-410501, Pune</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/paragpatil-dev" target="_blank" class="social github"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/parag-vinod-patil" target="_blank" class="social linkedin"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/paragpatil.15" target="_blank" class="social instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="https://youtube.com/@unfilteredparag" target="_blank" class="social youtube"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Parag Patil | Digital Resume Portfolio</p>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
+
 </html>
