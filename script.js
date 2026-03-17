@@ -1,33 +1,17 @@
-// Typing Animation
+// Typing Animation (once)
 const typingElement = document.getElementById('typing');
-const phrases = ["Cloud Computing Student", "Web Developer", "Open Source Enthusiast"];
-let i = 0;
-let j = 0;
-let currentPhrase = '';
-let isDeleting = false;
+const phrase = "Cloud Computing Student";
+let index = 0;
 
-function type() {
-  if (i >= phrases.length) i = 0;
-  currentPhrase = phrases[i];
-
-  if (isDeleting) {
-    typingElement.textContent = currentPhrase.substring(0, j--);
-  } else {
-    typingElement.textContent = currentPhrase.substring(0, j++);
+function typeOnce() {
+  if (index <= phrase.length) {
+    typingElement.textContent = phrase.substring(0, index);
+    index++;
+    setTimeout(typeOnce, 150); // typing speed
   }
-
-  if (!isDeleting && j === currentPhrase.length + 1) {
-    isDeleting = true;
-    setTimeout(type, 1500); // pause at end
-  } else if (isDeleting && j === 0) {
-    isDeleting = false;
-    i++;
-  }
-
-  setTimeout(type, isDeleting ? 50 : 150);
 }
 
-type();
+typeOnce();
 // Hamburger Menu Toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('nav ul');
